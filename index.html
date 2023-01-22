@@ -24,10 +24,12 @@
       src="https://kit.fontawesome.com/fa6b29deb7.js"
       crossorigin="anonymous"
     ></script>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+    </style>
   </head>
   <body>
-    <script src="script.js"></script>
-
     <div class="container">
       <div class="info-now">
         <i class="fa-solid fa-clouds"></i>
@@ -42,11 +44,20 @@
             <a href="#" id="fahrenheit-link">°F</a>
           </span>
         </div>
-
-        <img class="kirby"
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212>"
+        <div class="row">
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: 0%</li>
+              <li>Humidity: 0%</li>
+              <li>Wind: 0km/h</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-6">
+          <img class="kirby"
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212>"
+        </div>
       </div>
-
       <div class="searchsubmit" />
       <form id="search-form">
         <input type="search" id="citySearch" placeholder="Look for a city..." />
@@ -77,5 +88,12 @@
         </div>
       </div>
     </div>
+    <small>
+      <a href="https://github.com/Cdemata/weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by Chanelle Demata
+    </small>
+    <script src="script.js"></script>
   </body>
 </html>

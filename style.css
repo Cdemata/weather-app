@@ -5,6 +5,9 @@ body {
   text-align: center;
   background-color: #efc3cc;
   max-width: 600px;
+  margin-top: 50px;
+  font-family: "Poppins", sans-serif;
+  color: #7f4146;
 }
 .info-now {
   text-align: center;
