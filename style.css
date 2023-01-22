@@ -1,0 +1,26 @@
+body {
+  background: #d49ba9;
+}
+.container {
+  text-align: center;
+  background-color: #efc3cc;
+  max-width: 600px;
+}
+.info-now {
+  text-align: center;
+}
+.weather-now {
+  font-size: 50px;
+}
+.kirby {
+  max-width: 160px;
+}
+
+.search-form {
+  max-width: 300px;
+  text-align: center;
+}
+
+.submit-button {
+  color: #f8dade;
+}
