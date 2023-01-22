@@ -1,19 +1,54 @@
 body {
   background: #d49ba9;
+  font-family: "Poppins", sans-serif;
+  color: #7f4146;
 }
 .container {
   text-align: center;
   background-color: #efc3cc;
   max-width: 600px;
   margin-top: 50px;
-  font-family: "Poppins", sans-serif;
-  color: #7f4146;
 }
 .info-now {
   text-align: center;
 }
+.icon-now {
+  size: 40px;
+}
+
+h1 {
+  padding-top: 20px;
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+.units {
+  font-size: 16px;
+  text-decoration: none;
+  position: relative;
+  margin-left: 6px;
+}
+.temperature {
+  font-size: 40px;
+  margin-left: 16px;
+  line-height: 1;
+}
+
 .weather-now {
   font-size: 50px;
+}
+.current-weather {
+  margin-left: 80px;
+}
+li {
+  font-size: 13px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
 }
 .kirby {
   max-width: 160px;
@@ -26,4 +61,8 @@ body {
 
 .submit-button {
   color: #f8dade;
+}
+
+.icon-now {
+  font-size: 45px;
 }

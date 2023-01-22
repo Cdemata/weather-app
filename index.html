@@ -32,19 +32,20 @@
   <body>
     <div class="container">
       <div class="info-now">
-        <i class="fa-solid fa-clouds"></i>
         <h1>Los Angeles</h1>
 
         <h2>Monday 12:00</h2>
-
-        <div class="current-weather">
-          <span class="temperature" id="temperature">67</span
-          ><span class="units">
-            <a href="#" id="celsius-link">°C</a> |
-            <a href="#" id="fahrenheit-link">°F</a>
-          </span>
-        </div>
         <div class="row">
+          <div class="col-6">
+            <div class="d-flex current-weather">
+              <i class="fa-solid fa-circle icon-now"></i>
+              <span class="temperature" id="temperature">67</span
+              ><span class="units">
+                <a href="#" id="celsius-link">°C</a> |
+                <a href="#" id="fahrenheit-link">°F</a>
+              </span>
+            </div>
+          </div>
           <div class="col-6">
             <ul>
               <li>Precipitation: 0%</li>
@@ -53,12 +54,13 @@
             </ul>
           </div>
         </div>
-        <div class="col-6">
-          <img class="kirby"
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212>"
-        </div>
       </div>
-      <div class="searchsubmit" />
+      <img
+        class="kirby"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212>"
+        <div
+        class="searchsubmit"
+      />
       <form id="search-form">
         <input type="search" id="citySearch" placeholder="Look for a city..." />
         <input type="submit" id="submit" />
@@ -87,13 +89,14 @@
           <div class="col">57</div>
         </div>
       </div>
+      <small>
+        <a href="https://github.com/Cdemata/weather-app" target="_blank"
+          >Open-source code</a
+        >
+        by Chanelle Demata
+      </small>
     </div>
-    <small>
-      <a href="https://github.com/Cdemata/weather-app" target="_blank"
-        >Open-source code</a
-      >
-      by Chanelle Demata
-    </small>
+
     <script src="script.js"></script>
   </body>
 </html>
