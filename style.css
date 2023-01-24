@@ -9,8 +9,12 @@ body {
   max-width: 600px;
   margin-top: 50px;
 }
+.info-now-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
 .info-now {
-  text-align: center;
+  text-align: left;
 }
 .icon-now {
   size: 40px;
@@ -19,11 +23,17 @@ body {
 h1 {
   padding-top: 20px;
   font-size: 30px;
+  margin-left: 78px;
 }
 
 h2 {
   font-size: 20px;
-  padding-bottom: 15px;
+  padding-bottom: 0px;
+  margin-left: 80px;
+}
+h3 {
+  font-size: 15px;
+  margin-left: 80px;
 }
 .units {
   font-size: 16px;
@@ -65,4 +75,9 @@ li {
 
 .icon-now {
   font-size: 45px;
+}
+small {
+  padding-top: 20px;
+  position: relative;
+  margin-left: 270px;
 }

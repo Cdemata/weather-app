@@ -32,9 +32,10 @@
   <body>
     <div class="container">
       <div class="info-now">
-        <h1>Los Angeles</h1>
+        <h1>City</h1>
 
-        <h2>Monday 12:00</h2>
+        <h2>Day & Time</h2>
+        <h3>description</h3>
         <div class="row">
           <div class="col-6">
             <div class="d-flex current-weather">
@@ -48,9 +49,9 @@
           </div>
           <div class="col-6">
             <ul>
-              <li>Precipitation: 0%</li>
-              <li>Humidity: 0%</li>
-              <li>Wind: 0km/h</li>
+              <li>Precipitation: <span id="precipitation"></span>%</li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span>km/h</li>
             </ul>
           </div>
         </div>
@@ -89,14 +90,13 @@
           <div class="col">57</div>
         </div>
       </div>
-      <small>
-        <a href="https://github.com/Cdemata/weather-app" target="_blank"
-          >Open-source code</a
-        >
-        by Chanelle Demata
-      </small>
     </div>
-
+    <small>
+      <a href="https://github.com/Cdemata/weather-app" target="_blank"
+        >Open-source code</a
+      >
+      by Chanelle Demata
+    </small>
     <script src="script.js"></script>
   </body>
 </html>
