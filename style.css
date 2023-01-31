@@ -101,4 +101,15 @@ li {
 
 .active:hover {
   text-decoration: none;
+  cursor: default;
+}
+
+.inactive {
+  cursor: default;
+  text-decoration: none;
+}
+
+.inactive:hover {
+  cursor: default;
+  text-decoration: none;
 }
