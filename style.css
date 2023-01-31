@@ -3,8 +3,14 @@ body {
   font-family: "Poppins", sans-serif;
   color: #7f4146;
 }
+.kirby {
+  display: block;
+  max-width: 160px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
 .container {
-  text-align: center;
   background-color: #efc3cc;
   max-width: 600px;
   margin-top: 50px;
@@ -13,11 +19,20 @@ body {
   max-width: 600px;
   margin: 30px auto;
 }
+.searchandsubmit {
+  padding-top: 20px;
+  text-align: right;
+}
+.search-bar {
+  margin: 0 auto;
+  color: aqua;
+}
+
 .info-now {
   text-align: left;
 }
 .icon-now {
-  size: 40px;
+  max-width: 25%;
 }
 
 h1 {
@@ -27,7 +42,7 @@ h1 {
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 10px;
   padding-bottom: 0px;
   margin-left: 80px;
 }
@@ -36,37 +51,31 @@ h3 {
   margin-left: 80px;
 }
 .units {
+  color: #d49ba9;
   font-size: 16px;
   text-decoration: none;
   position: relative;
   margin-left: 6px;
+  line-height: 4;
 }
 .temperature {
   font-size: 40px;
   margin-left: 16px;
-  line-height: 1;
+  line-height: 2;
 }
 
 .weather-now {
   font-size: 50px;
 }
 .current-weather {
-  margin-left: 80px;
+  margin-left: 70px;
 }
 li {
   font-size: 13px;
   list-style: none;
-  margin: 0;
+  position: relative;
   padding: 0;
   text-align: left;
-}
-.kirby {
-  max-width: 160px;
-}
-
-.search-form {
-  max-width: 300px;
-  text-align: center;
 }
 
 .submit-button {
@@ -74,11 +83,22 @@ li {
 }
 
 .currenticon {
+  max-width: 40%;
   padding-top: 0px;
   margin: 0;
 }
-small {
-  padding-top: 20px;
-  position: relative;
-  margin-left: 270px;
+.credit {
+  max-width: 600px;
+  margin: 10px auto;
+  text-decoration: none;
+}
+
+.active {
+  color: black;
+  cursor: default;
+  text-decoration: none;
+}
+
+.active:hover {
+  text-decoration: none;
 }
