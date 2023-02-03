@@ -21,6 +21,43 @@ function formatDate(timestamp) {
   return `Last updated on: ${day} ${hours}:${minutes}`;
 }
 
+function displayForecast(response) {
+  let forecast = response.data.daily;
+
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecast.forEach(function (forecastDay) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="col-2">
+    <div class="weather-forecast-date">${forecastDay.dt}</div>
+        <img
+            src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
+            alt=""
+            width="42"
+        />
+    <div class="weather-forecast-temperatures">
+        <span class="weather-forecast-temperature-max"> ${forecastDay.temp.max}° </span>
+        <span class="weather-forecast-temperature-min"> ${forecastDay.temp.min}° </span>
+     </div>
+    </div>
+    
+  `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
+function getForecast(coordinates) {
+  let apiKey = "7059cb165caa3316bff682d263a01b1e";
+  letapiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}}&lon=${coordinates.lon}&exclude={part}&appid=${apiKey}&units=metric`;
+  axios.get(apiURL).then(displayForecast);
+}
+
 function showTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
   let conditionElement = document.querySelector("h3");
@@ -41,6 +78,8 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+
+  getForecast(response.data.coord);
 }
 
 function search(event) {
