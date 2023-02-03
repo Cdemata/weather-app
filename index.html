@@ -37,7 +37,8 @@
             type="search"
             class="search-bar"
             id="citySearch"
-            placeholder="Look for a city..."
+            placeholder="  Look for a city..."
+            autocomplete="off"
           />
           <input type="submit" class="search-button" id="submit" />
         </form>
@@ -61,15 +62,15 @@
         </div>
 
         <div class="row firstrow">
-          <div class="col-6">
+          <div class="col-4">
             <div class="info-now">
               <h1>City</h1>
               <h3>overcast clouds</h3>
-              <h2>Last updated on:</h2>
+              <h2>Last updated:</h2>
             </div>
           </div>
 
-          <div class="col-6">
+          <div class="col-4">
             <div class="d-flex weather-details">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
@@ -77,13 +78,15 @@
               </ul>
             </div>
           </div>
-        </div>
 
-        <div class="kirbyimage">
-          <img
-            class="kirby"
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212"
-          />
+          <div class="col-4">
+            <div class="kirbyimage">
+              <img
+                class="kirby"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212"
+              />
+            </div>
+          </div>
         </div>
 
         <div class="weather-forecast" id="forecast">
@@ -94,6 +97,7 @@
                 src="http://openweathermap.org/img/wn/02d@2x.png"
                 alt=""
                 width="42"
+                class="forecasticon"
               />
               <div class="weather-forecast-temperatures">
                 <span class="weather-forecast-temperature-max"> 18° </span>
@@ -107,7 +111,10 @@
 
     <div class="credit">
       <small>
-        <a href="https://github.com/Cdemata/weather-app" target="_blank"
+        <a
+          href="https://github.com/Cdemata/weather-app"
+          class="creditlink"
+          target="_blank"
           >Open-source code</a
         >
         by Chanelle Demata

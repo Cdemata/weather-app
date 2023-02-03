@@ -6,8 +6,8 @@ body {
 .kirby {
   display: block;
   max-width: 160px;
-  margin: 0 auto;
-  padding-bottom: 50px;
+  margin-left: -50px;
+  margin-top: -30px;
 }
 
 .container {
@@ -27,6 +27,10 @@ body {
 .search-button {
   border: none;
   border-radius: 10px;
+  background-color: #7f4146;
+  color: #f8dade;
+  text-transform: lowercase;
+  font-weight: lighter;
 }
 .search-bar {
   border: none;
@@ -40,6 +44,7 @@ body {
 h1 {
   padding-top: 20px;
   font-size: 30px;
+  text-transform: capitalize;
 }
 
 h2 {
@@ -77,6 +82,7 @@ h3 {
 
 .weather-details {
   padding: 50px;
+  margin-left: -80px;
 }
 
 .firstrow {
@@ -104,25 +110,34 @@ li {
   max-width: 750px;
   margin: 10px auto;
   text-decoration: none;
+  cursor: default;
+}
+
+.creditlink {
+  cursor: default;
+  color: #7f4146;
 }
 
 .active {
-  color: black;
+  color: #7f4146;
   cursor: default;
   text-decoration: none;
 }
 
 .active:hover {
+  color: #d49ba9;
   text-decoration: none;
   cursor: default;
 }
 
 .inactive {
+  color: #7f4146;
   cursor: default;
   text-decoration: none;
 }
 
 .inactive:hover {
+  color: #d49ba9;
   cursor: default;
   text-decoration: none;
 }
@@ -130,6 +145,7 @@ li {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 .weather-forecast-date {
