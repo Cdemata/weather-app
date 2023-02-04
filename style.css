@@ -66,7 +66,7 @@ h3 {
   font-size: 15px;
 }
 .units {
-  color: #d49ba9;
+  color: #ac573d;
   position: relative;
   font-size: 16px;
   text-decoration: none;
@@ -75,7 +75,7 @@ h3 {
 }
 
 .units a {
-  color: #d49ba9;
+  color: #ac573d;
   font-size: 16px;
   text-decoration: none;
 }
@@ -151,13 +151,13 @@ li {
 }
 
 .inactive {
-  color: #7f4146;
+  color: #d49ba9;
   cursor: default;
   text-decoration: none;
 }
 
 .inactive :hover {
-  color: #d49ba9;
+  color: #7f4146;
   cursor: default;
   text-decoration: none;
 }
