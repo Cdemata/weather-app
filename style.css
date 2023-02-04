@@ -126,6 +126,11 @@ li {
   margin: 10px auto;
   text-decoration: none;
   cursor: default;
+  color: #7f4146;
+}
+
+.credit a:hover {
+  color: #ac573d;
 }
 
 .creditlink {
@@ -151,7 +156,7 @@ li {
   text-decoration: none;
 }
 
-.inactive:hover {
+.inactive :hover {
   color: #d49ba9;
   cursor: default;
   text-decoration: none;
