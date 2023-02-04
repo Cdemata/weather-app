@@ -33,14 +33,24 @@
     <div class="container">
       <div class="searchandsubmit">
         <form id="search-form">
-          <input
-            type="search"
-            class="search-bar"
-            id="citySearch"
-            placeholder="  Look for a city..."
-            autocomplete="off"
-          />
-          <input type="submit" class="search-button" id="submit" />
+          <div class="input-group rounded">
+            <input
+              type="search"
+              class="form-control rounded"
+              placeholder="Type a city..."
+              aria-label="Search"
+              aria-describedby="search-addon"
+              id="citySearch"
+              autocomplete="off"
+            />
+            <span
+              class="input-group-text border-0"
+              id="search-addon"
+              type="submit"
+            >
+              <i class="fas fa-search"></i>
+            </span>
+          </div>
         </form>
       </div>
       <div class="info-now">
@@ -64,7 +74,7 @@
         <div class="row firstrow">
           <div class="col-4">
             <div class="info-now">
-              <h1>City</h1>
+              <h1 id="city">City</h1>
               <h3>overcast clouds</h3>
               <h2>Last updated:</h2>
             </div>
@@ -83,7 +93,7 @@
             <div class="kirbyimage">
               <img
                 class="kirby"
-                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/061/253/original/IMG_4874.png?1672709212"
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/728/original/0a4c012cc7d2124853dd9ee86c535ca2.gif?1675470126"
               />
             </div>
           </div>
